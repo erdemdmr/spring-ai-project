@@ -1,0 +1,6 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 25 Oct 2026 09:56:50 GMT
+
+{"answer":"A knight moves in an L-shape: two squares in one direction and one square perpendicular."}

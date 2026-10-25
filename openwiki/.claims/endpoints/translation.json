@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:c835b6ffd83ca1c672da4ed9a43409374675a956b53b9183721d47382a1c2a29",
+  "claims": [
+    {
+      "id": "claim_eaab41a315e14b358d50151f0ad2b438",
+      "statement": "TranslatorController builds its ChatClient at construction from an injected ChatClient.Builder and loads translationPromptTemplate.st as a classpath Resource via @Value.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L13-L14",
+          "version": "repo-lines-v1:sha256:6ad114b44b1a16577050fa27bd9a8994db18344ce9cf0928ba6217131f89c6d4:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTRmYzI2MDE5YTM5NWEzNGJjZWYwYmU1OTFjZmIwMDgzYzc2YWQyZDU4OGQ1ZjE5ZWIwODI2YTk1M2JjMzgwZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmUwMmNmYTAzNjM4YjBlYjNiNmU0MGU4NWZhOGZkYTczYTI0MjlhMDAzOWZhOWQyNzUzNzQ0YTc3MzFjOTlmNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzViMTQyMjM0ZTE4ZGE1NjYzYzE2ZmIyZjE5OTI5Yjg0NGRiMDUwOWEwNWQ0NGIxYzBiM2YyM2Y3OTJlNjVjYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzdiMjVkZmQzMmYxYWJiOTExOGUzMTc0MzVmNjFkOThlNjJkMTdhOWNmYjg1YTdjZmJhOWE1YWQyNGExMjRiZiJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L18-L20",
+          "version": "repo-lines-v1:sha256:4509ca22038980831f90657ef5257884a6ab311d74ce9c57c03c1fc204a2cdba:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjc4MjU1MjlhYjYzYWYyMTQzZDBiMzI5ZGYwMjY1YTczMzY1ZTcyN2RlNTBlZTVjNjY3NGU1YTYxZjk0Mjk3YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzdiMjVkZmQzMmYxYWJiOTExOGUzMTc0MzVmNjFkOThlNjJkMTdhOWNmYjg1YTdjZmJhOWE1YWQyNGExMjRiZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTU3MzRiNTA2MzVkZGI0MzI1ZWYyZWE5NDhiZmY1YzUzMGExMTY0MjI4NTMzZDRmNmM4YTRhNmFmYTE3MjM2MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3bbea8246e174b2c83befe0e76dd25e2",
+      "statement": "POST /translate parameterizes the user template with sourceLanguage, targetLanguage, and sourceText from the request body and returns .call().entity(Translation.class).",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L22-L32",
+          "version": "repo-lines-v1:sha256:5fa0e3a7be6c100a9a418eaad8579c9d40b28679faa4e9360f41b86719ca806b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxYTRlZThjZDdkYWVlZjU2Nzc2MjM0ZWZkM2FkMDViMjRhYWMzN2M4NDJkZDY5MjhlMzNjZWIzZDBiMTA3ZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU1N2MxMTIxYjVhODZmNDdiYTc0MzJjODZlNjcyOTAwMmEzZTcxN2QzYWNjYzc5YWQ2NDExZGNlNjAzZDRlMzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_052c8f748f8542c6a9344c7eb351caf7",
+      "statement": "translationPromptTemplate.st instructs an expert translator fluent in the target language to translate the text between the given languages.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/resources/translationPromptTemplate.st#L1-L3",
+          "version": "repo-lines-v1:sha256:f58f9398762cdb1641ac0bd1acdaa35f04834fdcf5ea25c4db8828c8ca57501e:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzRhNjhiZjNlYTE3OWZhYzI3MzExZDRjZjVkOWUxM2JjMWUwOWU5NTVjMTM3OGM0YzM1ZGE1OTNiZGI1Yjc3MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjQyZjY0Y2I2NDYwNDY0M2RmM2ViOTAyMTA4ZjE2MGMwMzhjMjBhODIxNjNjZTk5YzE3YzNlZWZjMzkyNzJmNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_99ad7b27b10a452b9a27ecfa405161d3",
+      "statement": "The same Translation record (text, sourceLanguage, targetLanguage) is used as both request and response shape.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/Translation.java#L3-L6",
+          "version": "repo-lines-v1:sha256:cbe1310d6f639d8dc16eae2313768005f450ad4ca2833c7bebeb597cbd564d4a:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTcyNjEzZDM4NzA3ZGM4ZDA5MDQwYjc2OWRlYWY1YWYzYmQ4NzRhNzY4NjUwOWY5MjhhMjFhNTc5ODA5ZjNjYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGNkZGJmOWQ3OTI0NjljY2YxNGM0MzNjMmY1NmMyMjFlYThlMjJkM2I0YjNiY2MwOTY1NmI2NjZiYjdkZjU5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzYyYTM3OTE3NTFmMmEzOGY3ZWE2OWRhZjUzYzZlZWExZjY1OWMyZmJkOWQ0OGY5MDNkNjY1ZTllZmJmOGQ2NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}

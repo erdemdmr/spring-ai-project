@@ -1,0 +1,138 @@
+{
+  "info": {
+    "name": "Spring AI Demo",
+    "description": "Endpoints of the spring-ai-demo application.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" }
+  ],
+  "item": [
+    {
+      "name": "Translate",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"Hello, how are you?\",\n  \"sourceLanguage\": \"English\",\n  \"targetLanguage\": \"French\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/translate",
+          "host": ["{{baseUrl}}"],
+          "path": ["translate"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Has translated text', () => pm.expect(pm.response.json().text).to.be.a('string').and.not.empty);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sentiment Analysis",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"I love this, it is wonderful\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/sentiment",
+          "host": ["{{baseUrl}}"],
+          "path": ["sentiment"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Has explanation and score', () => {",
+              "  const body = pm.response.json();",
+              "  pm.expect(body.explanation).to.be.a('string');",
+              "  pm.expect(body.score).to.be.within(-1, 1);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ask Question",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-Conversation-Id", "value": "demo-conversation", "disabled": true }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"gameTitle\": \"Chess\",\n  \"question\": \"How does a knight move?\",\n  \"language\": \"English\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/ask",
+          "host": ["{{baseUrl}}"],
+          "path": ["ask"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Has answer', () => pm.expect(pm.response.json().answer).to.be.a('string').and.not.empty);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Summarize Rules",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "rulesDocument",
+              "type": "file",
+              "src": [],
+              "description": "Rules document (txt, pdf, docx...) - select a file before sending"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/summarize",
+          "host": ["{{baseUrl}}"],
+          "path": ["summarize"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Has answer', () => pm.expect(pm.response.json().answer).to.be.a('string').and.not.empty);"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

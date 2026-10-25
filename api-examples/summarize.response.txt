@@ -1,0 +1,6 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 25 Oct 2026 09:57:15 GMT
+
+{"answer":"Tic-Tac-Toe is a two-player game (X and O) on a 3x3 grid. X goes first, then players alternate marking empty squares. The first player to get three marks in a row horizontally, vertically, or diagonally wins. If all nine squares are filled and no one has three in a row, the game is a draw. Marked squares cannot be changed or reused."}

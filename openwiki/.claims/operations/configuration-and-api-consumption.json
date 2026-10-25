@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:919b26069835270e16750d6e17d713c8b6134b2d2c2749be5c6660a039a9c50f",
+  "claims": [
+    {
+      "id": "claim_837d52e55e3b412cbb474e8e65463e53",
+      "statement": "Model connectivity is entirely env-var driven: AI_BASE_URL and AI_API_KEY have no fallback, while AI_MODEL defaults to TokenHub/deepseek-v4-flash when unset.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/resources/application.properties#L1-L3",
+          "version": "repo-lines-v1:sha256:77a547e72e88231da711bc51974e5a36d91ce9065ff8be28907d89e15164ed3c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmE0ZmVkOGM5YmVmZGJjZTdjMTY0ZWExODQ2ZGJjZDQ1OTMxNmM2YTI2YjlmMTE4NDg3MzJmMTcwOTk4N2MzNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzcwZDRlYzI0YjkwMGUyZTk1ZWI2ZmEyMDU3NzFmYjQyMTlhMWJjM2EwNjQ4YjJkNjM4MGE2ZmY4MDJjNTU1OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_84a8eb0071aa4d88a120741755388bbe",
+      "statement": "The environment variables map to spring.ai.openai.base-url, spring.ai.openai.api-key, and spring.ai.openai.chat.options.model, targeting an OpenAI-compatible endpoint.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/resources/application.properties#L1-L3",
+          "version": "repo-lines-v1:sha256:77a547e72e88231da711bc51974e5a36d91ce9065ff8be28907d89e15164ed3c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmE0ZmVkOGM5YmVmZGJjZTdjMTY0ZWExODQ2ZGJjZDQ1OTMxNmM2YTI2YjlmMTE4NDg3MzJmMTcwOTk4N2MzNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzcwZDRlYzI0YjkwMGUyZTk1ZWI2ZmEyMDU3NzFmYjQyMTlhMWJjM2EwNjQ4YjJkNjM4MGE2ZmY4MDJjNTU1OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_941b1232f1a9435aa4a3ef2307febb64",
+      "statement": "api-examples contains one curl script per endpoint: translate, sentiment, ask (with X-Conversation-Id header), and summarize (multipart upload of sample-rules.txt).",
+      "evidence": [
+        {
+          "resource": "repo://api-examples/ask.request.sh#L1-L5",
+          "version": "repo-lines-v1:sha256:39099d469b7a92dae381a3cb2591bb8a13770406e6f47978a9fed211b4c89a2f:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2ViNDI5YWM4MjNmMTA5OWJkZDE2YTAxYzA1ZDBlNzY2MThiODY3MGUwNjhkNzI4ZjJkZWE3MjdjMWIxNzA2NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://api-examples/sentiment.request.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:a4dcb70fcf5a0adfe376172cd9a127274e4b9be0d285feebddc1d410edd48d3f:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjIwYzk5MjRhZmZiMDMzMWUwMjRjZDI4OTQ4MTYxNWI0N2I2ZjNiZTZmMDVkNjlmOTBmOGYyNGEzZWUwNDkxZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://api-examples/summarize.request.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:4f8d28d9a98142f60c5c4fbdd7dde2138c70b61c4195b559080cd6863c4647f1:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTQzNDgyYzA5ODgzYjQ2OTViNDgxM2I1ZGQzNjExNWFlNTM1MzJhMzY4MWY1YjcyNDNhOWE1NzczOGI5MjJjNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://api-examples/translate.request.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:b01bb905aea40cbeca8b837930702d5e11e085ef18014a4e6a0cbaa845fcf588:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzk2ZWU0ZjBiMjdiZjEzYmEyMWRjNjhlZjIxMWQ3ZmI2N2U3NjUzODRhZDUyN2E3NTNhZDhhMDRlOWVjMWU3MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f519dea13e234ad8bfd539729e3e32fd",
+      "statement": "Each *response.txt captures the HTTP status line and JSON body from a real run against localhost:8080.",
+      "evidence": [
+        {
+          "resource": "repo://api-examples/ask.response.txt#L1-L5",
+          "version": "repo-lines-v1:sha256:934c5457fc80b7bf57a508956751fb2aba8749837aa8f7fd51d9980ef0c4405e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGIwYmU1MGFhNmI2MzAwNmI1N2JlMDZhMjUxYzI0OWNiYjhlMTUxODgwMzkzZmRjZTJiMTRiMzg3NDJiOTBlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmM0MmZjNDQzYTQxYzZkYTQ2ZjNlNGNjOTlmMjJmN2VkMDhlODc4ZjUxODI3MjM1MDE5NTA3NmQwZjViMzZiZCJ9"
+        },
+        {
+          "resource": "repo://api-examples/sentiment.response.txt#L1-L5",
+          "version": "repo-lines-v1:sha256:3441aa4a9f9af7777bdf3aa93507218ed31a950b732e483ec9d896cc5b1d824d:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGIwYmU1MGFhNmI2MzAwNmI1N2JlMDZhMjUxYzI0OWNiYjhlMTUxODgwMzkzZmRjZTJiMTRiMzg3NDJiOTBlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzg0MGY3ZTYzZGVhNjE0OWVjOTVmMGFiNDNhMDA2OGM4ZTA5NDI3YzRlZjUwMGVmZTIzZDY0ZWE1MThlOTRkZSJ9"
+        },
+        {
+          "resource": "repo://api-examples/summarize.response.txt#L1-L5",
+          "version": "repo-lines-v1:sha256:5f43872c4bb4c98fb6cb8a5d9136b627a0bbc4fedb1f23e3db504457876c169f:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGIwYmU1MGFhNmI2MzAwNmI1N2JlMDZhMjUxYzI0OWNiYjhlMTUxODgwMzkzZmRjZTJiMTRiMzg3NDJiOTBlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDJkYzM3M2NlN2M2NDQyNTVlMmViMTEyMWU5MmJmOTBhMThhYTJhNzEzMzI3NWIzZmIyZGNiNmMyOGY3ZmM0ZSJ9"
+        },
+        {
+          "resource": "repo://api-examples/translate.response.txt#L1-L5",
+          "version": "repo-lines-v1:sha256:586da13fb1784b37fd48a82c9eca9d9e4268df90630a7bb6234639b6d33f744b:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGIwYmU1MGFhNmI2MzAwNmI1N2JlMDZhMjUxYzI0OWNiYjhlMTUxODgwMzkzZmRjZTJiMTRiMzg3NDJiOTBlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTY0YmFiM2NlZTZjNzEyODQ0YzYzOGI5Y2EyOTJjZWQ5ZDM4OWZjNWQ4ZTUwODZjOThiMTYwNzFiNDNmYmYxMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e13d4f4f435246dea2ae940d67144bef",
+      "statement": "The Postman collection defines the four endpoint requests using a {{baseUrl}} variable, which the local environment sets to http://localhost:8080.",
+      "evidence": [
+        {
+          "resource": "repo://postman/spring-ai-demo.local.postman_environment.json#L4-L6",
+          "version": "repo-lines-v1:sha256:b212aa3b0b16a90026dc9ec1bd42822ada5c26212e0c0ba8edf0988e1ee1ae14:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzVkYzQ0NjM0NzhiMmU1MmQ4OWY1MTM4MzdjNThjNzQ3ODdhZjdmYTg0ZGJiMWQ5ZWVhOTUzN2M1NTA5NTFmOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTY0ZDhjMDczNDI5ODkzMTAxNTc2ZDg4ZDk5MTI3ZTg5ZDY4OTFkM2IxN2U4OWRmMDJlYzlhZTcwNzA1ZDhiZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmQ3ZTY4MTA1MDkyMWM1YTQ0NDg2NWZhN2IzNjIwZTgxZmZlMDI1YTlkZDM1YmFhMzlmMTg5NzllMGEyMzczMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDE1MzJmNjk4Mjc1Y2EzMzgwOThjOTQzNzVkNDMzOTUyNTRjMzFhNTc5Mjc3YWQyOTI2Y2JjMTQ5NjY5YTAzOSJ9"
+        },
+        {
+          "resource": "repo://postman/spring-ai-demo.postman_collection.json#L1-L17",
+          "version": "repo-lines-v1:sha256:3a8db75c885a0e87f150b8be84052d199b654e2f4bf8877a42749512e0123c78:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZmIwOGZkYTFhY2I5NTdiNjExNmJkMzc4MTFhMWZlNDFhMDE2MTFjMDYzMWVkYmY3ODZkNjg4OWEyN2E1NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkYjAyZDFmN2RlMDNlMmE3NDNkNGFkY2MyMGZhMjk3MDFlNjc2NzkyYmYzYjAyMmZhODg5ZTkyZDZhNzhlOWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFhMWY0N2U2MWY4ZjhkMDJiZWZiMTJiYjYzNTgzZTY1MWVmY2IxM2Q5YWQxZGM0M2Y3YTkzNDU4ZTYyZjllNmYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/overview.md": {
+      "pageVersion": "sha256:1f6f69a1aab61b05bcba231e0c52d511b0711bd7e4e1e97c4005554707fc7d91",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    },
+    "/openwiki/architecture/prompt-and-chatclient.md": {
+      "pageVersion": "sha256:835ee226bb2a31acc6e94eef2e09cd4b726afccfb0fe47aa90405326403ef8c7",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    },
+    "/openwiki/endpoints/board-game-buddy.md": {
+      "pageVersion": "sha256:1c99403e53c783c26674f104d88c6e23c654c43c2ea048353adf9fb9772a6a0d",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    },
+    "/openwiki/endpoints/sentiment-analysis.md": {
+      "pageVersion": "sha256:62cbaf2862a337a746203f718e68f5e2944592fa54d4bc9900ae6d76707820d0",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    },
+    "/openwiki/endpoints/translation.md": {
+      "pageVersion": "sha256:c835b6ffd83ca1c672da4ed9a43409374675a956b53b9183721d47382a1c2a29",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    },
+    "/openwiki/operations/configuration-and-api-consumption.md": {
+      "pageVersion": "sha256:919b26069835270e16750d6e17d713c8b6134b2d2c2749be5c6660a039a9c50f",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:fa77c76a72c8ca8d8cef0df4987834dff0810407f3d0d94ae1ed660a45415f3a",
+      "completedBy": "opencode",
+      "completedRunId": "6e0aa609-1b65-499d-9713-48b6377a845f",
+      "gitHead": "26013b03fb5d043566828b0357834de5127b0550",
+      "sourceFingerprint": "sha256:f17948cde418e33bc07edbdbccc6665d541b6a01e87fb089c9ba1f169e12b5aa"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1c99403e53c783c26674f104d88c6e23c654c43c2ea048353adf9fb9772a6a0d",
+  "claims": [
+    {
+      "id": "claim_3b13ae0ec565430092196d929325ec71",
+      "statement": "BoardGameService defines summarizeRules and askQuestion; SpringAiBoardGameService is the only @Service implementation building a single ChatClient with the two promptTemplates resources.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/BoardGameService.java#L3-L5",
+          "version": "repo-lines-v1:sha256:424e850f2c9f1a1783dbd6ab9e25049fe5041ac8c980ad2de700257cd8d58eaf:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2Y1NWExZDZlZjVmY2I5MjhkMDdmYmY1MmRkZWZjMmY1OGNjYjI2ZTI1ZWUzOWUyMmNhMWE4MjAzZDEzMTJiMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjM4ZjcyM2JjZTIyOWEwZmU3NDAxY2YzM2NiZTRhNDFkMTU1MTBmNzJjMDVhMTRhMzk3MmUxM2NlNjUxNDI3MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzI5Mzg2N2MxNzY2MmFhZmI4MDZkODU1MTY1NDNlMGI3ZjExNWFlZTE2MGVjNmEzMjVjZTRhMjUwMDc0ZTAwMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L9-L22",
+          "version": "repo-lines-v1:sha256:3e0ea2187f85deb65a0b738e0fd2fa8f38208fd7fec8f5bc744d3d600449366c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiMzM2YzQyYjJmNTIwN2I3NzVlNTBhOGRhY2UyZDZkMTViMjZmNjFlOGNkYTJjYTRkNDNmY2U0YWU0ODQ0ZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1ZWQ1YTAzZWFjY2ExMGI2MTA0NWZhNTE1ZmY5NjMxNGEzNWNjMjViZDdlYzRmZTA5YjFkOTY5ZGQ4OTk1ZmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFkMzU3MTJjZGZmMzViNDA1MzhiZGI5NDhjZTMwZTVmNGE1OWQ2OTM4YmQ4NDgyOTg1NzdlNzJhMTZjYWM0NGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_29a45640b43b4edaab33c6c040a51c9f",
+      "statement": "POST /summarize parses the multipart rulesDocument with TikaDocumentReader, takes the first extracted document's text, and delegates to summarizeRules.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SummaryController.java#L23-L28",
+          "version": "repo-lines-v1:sha256:beaf14cb4a94017a6eade1589f11eccad19fec16ed6147dedb626e780cd91027:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTQ3ZDEwMDcxZjU5ZGIwNzVhYWMyYTA4Mzg0NTQ0MzczMzg5NDk2OTE0OTY2ZTcwNDE4N2E2MTZhYmU1M2Q0MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTMwZDk5NDYxNDUzYmFkMjQ1M2I2YzgzNWFjNzY3ODY4YzJlM2Y2OGFkYWY2MjdlM2NjZDdkZDg1NDYzMDgwNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODE3OTY5YjM1YjlmYzEzZjNmOTViNzI2YWJjMDVlYTEwNzYxYzBiYmU1ZTQyMjUxYWU2OWExNDZmMDk3NjA2OSJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SummaryController.java#L25-L25",
+          "version": "repo-lines-v1:sha256:c04a299d9532eaacfbd859aab95331a02b14129859c42a5aae0d18bec6e691a8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzA0YTI5OWQ5NTMyZWFhY2ZiZDg1OWFhYjk1MzMxYTAyYjE0MTI5ODU5YzQyYTVhYWUwZDE4YmVjNmU2OTFhOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzA0YTI5OWQ5NTMyZWFhY2ZiZDg1OWFhYjk1MzMxYTAyYjE0MTI5ODU5YzQyYTVhYWUwZDE4YmVjNmU2OTFhOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGQxMDJlYjFmNDFlNzJlYmIzNTBhNzczMDMzOTU3MjlmMTM5ZTgzMmY4NjUwMzcyYzk2ZTk1ODJjZmFhZTBjNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTVhZDdhZmJlNmM3MmNhOWJiNzEzMWU2ZmRiYTk0ZTVmZTJkNTNmMDhiNWIxNWQ2MzQ2MGM5NDMxMWI1Y2VkYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0148ef45f41a45bbbcd5551d3223b440",
+      "statement": "POST /ask rejects blank gameTitle or question with HTTP 400 and generates a fresh UUID conversation id when the X-Conversation-Id header is absent or blank.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SummaryController.java#L30-L42",
+          "version": "repo-lines-v1:sha256:bc35b64526666d316632482f270783e8ecc7a42b6b29bc0e8f57462052f100ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0ODllYmVlMWQ2YWNlNjlkNDU4MzFmMjIzNGNhNmZjNmNkNGNjNjc5ZWQ2ZGY4MTdlMzQ4MDVmZTgzMzYwNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MTA2M2I1MTk5Y2JlZDM2ZGM4YmY4ZjE1YmZlZmMyYjY0OGM4MDcxNmI2ZDllZmMwNDdjYzdiZWRhMTc1NzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a29179282d2c47799fca7b422b82b95e",
+      "statement": "Question defaults a null or blank language to \"English\" via its compact constructor and offers a two-argument constructor omitting language.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/Question.java#L8-L18",
+          "version": "repo-lines-v1:sha256:45f779fb07a3599be582a7ad9ea960fc05b88f6f9da35e02c2580ded8351cc89:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5NTk2YjgxZDk1YTAwMTdiYzJhNTM4MmYyNDJiYTk5MTJlZjBjNGVkZTljYzJhNTZjMjRkZGE2NzQyMjY3ZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiMDE1YjQxYmQwODllOGRmNjk3OTQ0NWQ0ZGQyOTE1MmNhNzAwODk1ZTg1ODVlYTQ4ZmE1NzRiYzU1ODczMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e7b54d301d314e0a98a22d11d5372028",
+      "statement": "askQuestion renders systemPromptTemplate.st with gameTitle and targetLanguage params, sends the question as the user message, and attaches the ChatMemory.CONVERSATION_ID advisor param scoped by conversationId.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L35-L47",
+          "version": "repo-lines-v1:sha256:987dc47964e96a79e0a05b5737120af945a90d2654edd12df38573d1a3f7cdf5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkYzJiMzExYWJlODc1NzJlOGE3Y2MwZDk5NmE2NTg0NDA3NmU1MjMyZDIxYjdhODU0NzVmOWI0MDU1Yjc0OTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2ZDNiYjM5OWM3ZTE4NGQxMTFhNjgzMTkzOWIwMWFjOTRjYjdlZmFkYmI5MTFiNTJmYzQ5ZTViYTYxYWY2YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1cdc149339b84f14adbf4cf893be400f",
+      "statement": "summarizeRules uses summarizeSystemPrompt.st plus the \"Summarize these rules: {gameRules}\" user text and returns the model output bound to the Answer record.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L24-L33",
+          "version": "repo-lines-v1:sha256:5a8281eadbfb941bc402d0943fc9ba3836947c6af33bead21fe09b098fe9ba0f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkYzJiMzExYWJlODc1NzJlOGE3Y2MwZDk5NmE2NTg0NDA3NmU1MjMyZDIxYjdhODU0NzVmOWI0MDU1Yjc0OTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI2YTg1NWYzNmY4OGI3NDMxNDg5NjU0N2VlZDRiMDAwZTdjZGM4YzFmZGY5OTZhMDhhODIwZjA3NDE2Yjg2NGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlNDA4ZDM5NDA2NDVjYWZiYTNmMTU0NDliMTgzYWMwZWYzYmU0YjZkYTQyMzkwNmU3MTE1YzM4ZmIzMGE0OGEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}

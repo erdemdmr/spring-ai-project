@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:fa77c76a72c8ca8d8cef0df4987834dff0810407f3d0d94ae1ed660a45415f3a",
+  "claims": [
+    {
+      "id": "claim_6d0b36ba216046cf80488044693c25e4",
+      "statement": "The application exposes three feature areas via POST endpoints: /translate, /sentiment, and /summarize + /ask (board game buddy).",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SummaryController.java#L14-L15",
+          "version": "repo-lines-v1:sha256:622d5fe1be27eb0e6f3b0093e437456ea2b5e45096723f7d22cb1788bdd2982d:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODAyYjVmMmRmYTY5MzkwNjE4ZjY2YWRiNmI3OTZjMzQ2NjIzMjFjNzdiNDBmMDNkYWJlNTBiZTIxODdmZTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ExNzU0ZTRlZjkzN2NlYjdmNWY3OGE2YzdiNWUzMTQyOTRmOTU3Mjg0NmFkYWE0NjZkMTZkMTZiM2E1YmQ2MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmQ2ZjJlYzA0ZTU0YTc5ZTc3MzczOWRiNjJiOTg1MmNlZGVlNTQ1NjMyM2MyYzgyMTdkZDg1ZjA1YzVjY2UzMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjlkOTU1ZGI4ODY4N2RiYTc1Yjg3YzYwMDg1YTQ2YWJlZDQ3ZDU2NzNmZWE2ZmJhMGZmZGE5ZjE5MGQ4NDhmYyJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentController.java#L10-L11",
+          "version": "repo-lines-v1:sha256:14208c0f85bf0e90a1234112fb4e274a487e4261690e4b4e8537af0a67845f69:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODAyYjVmMmRmYTY5MzkwNjE4ZjY2YWRiNmI3OTZjMzQ2NjIzMjFjNzdiNDBmMDNkYWJlNTBiZTIxODdmZTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQ5Mjg2YWYzMjYyYWVmMjkxZWFhNGU2NWMyNWUwOTkxOWYzMTI0MDdiMTNjNTAzMWY1ZTliNDI1NDJlZGEyZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGI1MjkzMzg2Nzk4ODkzYWUxZTVmZjc2YzBmMzYwZmI0MDQ5MjRlZmNkZDE2Y2UyMjdiYjllZWUyOTRlMWExZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2UxZDBhNGYwMTM4NDI5MWQ5NDI1YTA2ZGRlNGE2ZWQzYzA2ODBlNTkyMDY4YWI5NjczZmExNDIwMDQwYTUzOSJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L10-L11",
+          "version": "repo-lines-v1:sha256:9d88a0c42fbd68e1ed5f59efda1d04ee02f384a173e38704a19f34410086dc9d:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODAyYjVmMmRmYTY5MzkwNjE4ZjY2YWRiNmI3OTZjMzQ2NjIzMjFjNzdiNDBmMDNkYWJlNTBiZTIxODdmZTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2NjZjgwNjIyOTAwZmQyNzFhMTlmYWIxYjIwZTdkODYxZjE3MDEwOGU2ZDg5MTMxYzg0NGMwZTY1MThmMWQyMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGI1MjkzMzg2Nzk4ODkzYWUxZTVmZjc2YzBmMzYwZmI0MDQ5MjRlZmNkZDE2Y2UyMjdiYjllZWUyOTRlMWExZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTY2YmQ2NDI3Y2RkYzAzMDQ1NTk4MmE4NjBlNTE2NDIzMmFlMTBlYTY4YTA0NWUxNjgxNzZhYzNhZmQ4YTNkNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_87dc09de137047799dff0c4405fad4ce",
+      "statement": "The project requires Java 21 and Maven, using Spring Boot 3.4.2 via spring-boot-starter-parent and the Spring AI 1.0.0 BOM.",
+      "evidence": [
+        {
+          "resource": "repo://pom.xml#L17-L17",
+          "version": "repo-lines-v1:sha256:2df262ef9646430eabe6b977fcf297493c369e6777eb6a8005e8602f36f15edd:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmRmMjYyZWY5NjQ2NDMwZWFiZTZiOTc3ZmNmMjk3NDkzYzM2OWU2Nzc3ZWI2YTgwMDVlODYwMmYzNmYxNWVkZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmRmMjYyZWY5NjQ2NDMwZWFiZTZiOTc3ZmNmMjk3NDkzYzM2OWU2Nzc3ZWI2YTgwMDVlODYwMmYzNmYxNWVkZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTI2MDViODJhYTEwNWFjZDFlNWNlOGMyMTI1ZjgzYjU1ZmE4NTdhZWFmYWYyMWVkNzU2MzdmMDUzYjAwYWQwZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWJiNjA4NTE4ZDg2YjZiZDQ0YzI4NTMxN2MzNDRmNTkxOWQ3MmNjNTc2OGZiZDAyMTRlMzIwM2ZlZWUwY2U4MSJ9"
+        },
+        {
+          "resource": "repo://pom.xml#L36-L42",
+          "version": "repo-lines-v1:sha256:a2cf854c365c25f4ef7626f54fda4bb42ec4c1250d2ccf4e0324ce587cc426ac:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWEyMmI4MDU0MzBkOGE3MDcwODQ4MDY1YmM0MmI2MTgwNDY1MTFkNGNlZjdlMzNhYTA1Nzk3MWMzMWIyZmMzNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmJjMjViOTdlYmQwNjk4OWZmZWI1MjgwMGEyMTc2OTU1MDYyOGJiZDJmNWEyY2FlYThmYjczMGZmMTJhYjJmOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTAwM2IxMjgwNzMzMWIxMzg0Mzk2MThiNWJjMzg0N2FkMzVmMzlhMDgwZWU0ZGRjMmExNWNhOTFkZTQ5NGFiZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODU4MjViMTYwZWExNjMyN2Y3ZDNmYmM5YzczZmY5OTg2Yzk1MGE5YjhhZmE1ZDE2NGY2YWM0OWMwNzdjODRlMyJ9"
+        },
+        {
+          "resource": "repo://pom.xml#L5-L9",
+          "version": "repo-lines-v1:sha256:3d54ee9f2a4715a9b3d18450cbd2b5764fc912c3483ad539f2d2750a3aace56e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjJkODY5MmM0NzA0YjljZDlmYzA3Zjk4M2EwMWNhY2U5MjYyNjNmMmNmMmQ4YzQzZDNkZDQ0Nzc4NDQ2ZTg5YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjIzNDI2NGQ5NmZmNzNmYzhmYzM2MTRjM2Y3Yjk0NGMyNDhiZWM4YzJiMTJkMGVlN2RiZmI0YTkzYjc3Mjg1NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjk1OGZiZWU3MmRmMzZlOTdlMDY4OTU4YjhhN2NkY2VjZjg2M2MxNzVmOTJjMjQyYzRlNjMzMDFmN2VlZTYzYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzNkMzJlNTdiMWI1ODRlMmQ2NTY2YzUxMjA3YjJkZDM4ZjFiNTY0NjE3ZThhNmM5MDQ0NjNkOTY1OWQ4YWM2ZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c5065aa648a049b593e4c7cafbbb50e0",
+      "statement": "Before running, AI_BASE_URL and AI_API_KEY must be exported, and AI_MODEL optionally overrides the default TokenHub/deepseek-v4-flash model.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/resources/application.properties#L1-L3",
+          "version": "repo-lines-v1:sha256:77a547e72e88231da711bc51974e5a36d91ce9065ff8be28907d89e15164ed3c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmE0ZmVkOGM5YmVmZGJjZTdjMTY0ZWExODQ2ZGJjZDQ1OTMxNmM2YTI2YjlmMTE4NDg3MzJmMTcwOTk4N2MzNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzcwZDRlYzI0YjkwMGUyZTk1ZWI2ZmEyMDU3NzFmYjQyMTlhMWJjM2EwNjQ4YjJkNjM4MGE2ZmY4MDJjNTU1OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c4f1361d2c7a429cad998a0effe36893",
+      "statement": "Ready-made curl scripts for all four endpoints live under api-examples/, alongside captured response fixtures and a Postman collection under postman/.",
+      "evidence": [
+        {
+          "resource": "repo://api-examples/ask.request.sh#L1-L5",
+          "version": "repo-lines-v1:sha256:39099d469b7a92dae381a3cb2591bb8a13770406e6f47978a9fed211b4c89a2f:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2ViNDI5YWM4MjNmMTA5OWJkZDE2YTAxYzA1ZDBlNzY2MThiODY3MGUwNjhkNzI4ZjJkZWE3MjdjMWIxNzA2NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://api-examples/sentiment.request.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:a4dcb70fcf5a0adfe376172cd9a127274e4b9be0d285feebddc1d410edd48d3f:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjIwYzk5MjRhZmZiMDMzMWUwMjRjZDI4OTQ4MTYxNWI0N2I2ZjNiZTZmMDVkNjlmOTBmOGYyNGEzZWUwNDkxZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://api-examples/summarize.request.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:4f8d28d9a98142f60c5c4fbdd7dde2138c70b61c4195b559080cd6863c4647f1:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTQzNDgyYzA5ODgzYjQ2OTViNDgxM2I1ZGQzNjExNWFlNTM1MzJhMzY4MWY1YjcyNDNhOWE1NzczOGI5MjJjNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://api-examples/translate.request.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:b01bb905aea40cbeca8b837930702d5e11e085ef18014a4e6a0cbaa845fcf588:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzk2ZWU0ZjBiMjdiZjEzYmEyMWRjNjhlZjIxMWQ3ZmI2N2U3NjUzODRhZDUyN2E3NTNhZDhhMDRlOWVjMWU3MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}

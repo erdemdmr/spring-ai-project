@@ -1,0 +1,4 @@
+Tic-Tac-Toe is a game for two players, X and O, who take turns marking the spaces of a 3x3 grid.
+X always goes first. The first player to place three of their marks in a horizontal, vertical or diagonal row wins the game.
+If all nine squares are filled and neither player has three marks in a row, the game is a draw.
+A square that has been marked cannot be changed or reused.

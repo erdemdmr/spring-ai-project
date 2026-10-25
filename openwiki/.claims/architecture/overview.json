@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1f6f69a1aab61b05bcba231e0c52d511b0711bd7e4e1e97c4005554707fc7d91",
+  "claims": [
+    {
+      "id": "claim_5aa24e5fb59c40b8a47decbdfa403a82",
+      "statement": "The build is a Spring Boot 3.4.2 application targeting Java 21 that imports the Spring AI 1.0.0 BOM so no Spring AI version is pinned on individual dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://pom.xml#L34-L44",
+          "version": "repo-lines-v1:sha256:292eaf7273ca2e5fa87c3a841a13b951d38a022048792054fbacb156931fa402:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhMWY3NzA5ZWYxMDc0ZmQ1NzdkMWRlMDAxYmVmZjVjNDgzYzE5NWUwMmMxYmE5NzBjNzljODBjZWY0Y2IxODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliMGY2NWRjMWZiNDNkMjczNDU3OTg3NDIyMTU5NTllOWEwNjQ5NmI3ZjE2YmNmOTI5ZTAzN2RmZWVhMDU3ZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1ZGUyNDQ5MThhNjUxNTAzYzhiMWE2NWJkODZlYzYyYzRhZGZiMTU3NWU2ODM3Nzc1OWFjMzRjY2QyZDlkOWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2ZTBiYjAwOWQ2YWE0YzcxZTFhZWFkOTM2ZjcwNDM1MTRjN2I3ZDIyMGMxOGVlYWI1YTdkNTFjMmZiNGYyOGMifQ"
+        },
+        {
+          "resource": "repo://pom.xml#L5-L19",
+          "version": "repo-lines-v1:sha256:807c57275ab81fe2fe7d9d754b366d2b4f0234be1c1513db0c9a05c3f3795fce:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyZDg2OTJjNDcwNGI5Y2Q5ZmMwN2Y5ODNhMDFjYWNlOTI2MjYzZjJjZjJkOGM0M2QzZGQ0NDc3ODQ0NmU4OWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiZGY5NDQzNjg2NmE5Y2ZjYTBhYzNkNjIzMDc3ZWQwNzIxOGQ1NDFhMTQ5ZjliMDM4Y2U0MjcxYzYxNjM1ZDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5NThmYmVlNzJkZjM2ZTk3ZTA2ODk1OGI4YTdjZGNlY2Y4NjNjMTc1ZjkyYzI0MmM0ZTYzMzAxZjdlZWU2M2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwYTAyNDk2OWQ3ODg1NTY3N2EyNGE0YzdkN2JkYzUwY2QwYjBkMDRiODRjMTdjMmE5Y2IwMGYyMDkzNzU2MmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fedc554192724fa7b9ccee3d96a7aa3d",
+      "statement": "Runtime dependencies are spring-boot-starter-web, spring-ai-starter-model-openai, and spring-ai-tika-document-reader.",
+      "evidence": [
+        {
+          "resource": "repo://pom.xml#L20-L33",
+          "version": "repo-lines-v1:sha256:ea44b4bcd969a2477b93233706361e2c61b83d7242e34d708e186411e3f67c74:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxNjQ0ODI1Y2MyYzJhMDJiMWU2MWY0Nzc2NjkxYTQzNzY0MDU0NjI1ZWZhMDEyZDBjZmZiNTI4YWEyODVmODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxZGNiOThhZmNjOTU5YmU5YTk5MGFhNDQxYTBkYTgzMTRjZTE3ODE5OTUzYzI2M2Q4MDY4OWY0OGJkOGY1ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3OGYzZTZjZjIzN2E1ZDg2MWMxZmE1YjgxMjc0ZDc3NjgxOTk0MDZiMmE1MTM1NjZjZmY4MGUxNDc3ZTY1NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwN2Q4ZmZjZTFiMDNjNzk1ZWFmYjE3MTEzYjNlM2UxNTQ5ZWQ3MGRkMWUzMTQzNTQwNWNiMjg5ZGJlNzlkZjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_29781004e9b94d68870370822c051fff",
+      "statement": "SpringAiDemoApplication in com.example.springaidemo is the only application entrypoint; no additional configuration classes or component scan customization exist.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/SpringAiDemoApplication.java#L6-L10",
+          "version": "repo-lines-v1:sha256:87b9e94459253cc638403edb3f4c9de91fc26e805cef1c24836a7b0808137969:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjFjMDQwY2VjYTE5ZGQ1NzFiODhlOWQ2MDA5YTViNTY5MzJkYWMxNTEyZDUyNDg1Y2MyYTljNDQ0MGZkOWJkMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjdjZGE4MmRhNjA2MjM4ZTA1ZTYyMzk5NTY5YzVlZTAzOTkzNDE5NjQ4YWU1ZDQzYTJiZjhjZDYzNDdmODI2MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDAxZmQ3MGZmMzdjMmM2MDMyOTQyYmI0NDM3NmUyNTcxMDI1ZGYyN2RkZmQ1YTNmNTc0ODIzMzYxOTViYzE5MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_01b4e7760d3a4f2aa22a700d8ad74482",
+      "statement": "Feature packages simpletranslator, sentimentanalysis, and boardgamebuddy each own their controllers and request/response records under com.example.springaidemo.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SummaryController.java#L14-L15",
+          "version": "repo-lines-v1:sha256:622d5fe1be27eb0e6f3b0093e437456ea2b5e45096723f7d22cb1788bdd2982d:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODAyYjVmMmRmYTY5MzkwNjE4ZjY2YWRiNmI3OTZjMzQ2NjIzMjFjNzdiNDBmMDNkYWJlNTBiZTIxODdmZTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ExNzU0ZTRlZjkzN2NlYjdmNWY3OGE2YzdiNWUzMTQyOTRmOTU3Mjg0NmFkYWE0NjZkMTZkMTZiM2E1YmQ2MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmQ2ZjJlYzA0ZTU0YTc5ZTc3MzczOWRiNjJiOTg1MmNlZGVlNTQ1NjMyM2MyYzgyMTdkZDg1ZjA1YzVjY2UzMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjlkOTU1ZGI4ODY4N2RiYTc1Yjg3YzYwMDg1YTQ2YWJlZDQ3ZDU2NzNmZWE2ZmJhMGZmZGE5ZjE5MGQ4NDhmYyJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentController.java#L10-L11",
+          "version": "repo-lines-v1:sha256:14208c0f85bf0e90a1234112fb4e274a487e4261690e4b4e8537af0a67845f69:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODAyYjVmMmRmYTY5MzkwNjE4ZjY2YWRiNmI3OTZjMzQ2NjIzMjFjNzdiNDBmMDNkYWJlNTBiZTIxODdmZTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQ5Mjg2YWYzMjYyYWVmMjkxZWFhNGU2NWMyNWUwOTkxOWYzMTI0MDdiMTNjNTAzMWY1ZTliNDI1NDJlZGEyZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGI1MjkzMzg2Nzk4ODkzYWUxZTVmZjc2YzBmMzYwZmI0MDQ5MjRlZmNkZDE2Y2UyMjdiYjllZWUyOTRlMWExZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2UxZDBhNGYwMTM4NDI5MWQ5NDI1YTA2ZGRlNGE2ZWQzYzA2ODBlNTkyMDY4YWI5NjczZmExNDIwMDQwYTUzOSJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L10-L11",
+          "version": "repo-lines-v1:sha256:9d88a0c42fbd68e1ed5f59efda1d04ee02f384a173e38704a19f34410086dc9d:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODAyYjVmMmRmYTY5MzkwNjE4ZjY2YWRiNmI3OTZjMzQ2NjIzMjFjNzdiNDBmMDNkYWJlNTBiZTIxODdmZTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2NjZjgwNjIyOTAwZmQyNzFhMTlmYWIxYjIwZTdkODYxZjE3MDEwOGU2ZDg5MTMxYzg0NGMwZTY1MThmMWQyMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGI1MjkzMzg2Nzk4ODkzYWUxZTVmZjc2YzBmMzYwZmI0MDQ5MjRlZmNkZDE2Y2UyMjdiYjllZWUyOTRlMWExZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTY2YmQ2NDI3Y2RkYzAzMDQ1NTk4MmE4NjBlNTE2NDIzMmFlMTBlYTY4YTA0NWUxNjgxNzZhYzNhZmQ4YTNkNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c989d3e054c3476b9d0d57f8f2a03672",
+      "statement": "Every feature builds its ChatClient from an injected ChatClient.Builder rather than configuring the model client directly.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L20-L22",
+          "version": "repo-lines-v1:sha256:3af2a4ec7b6c3eb937b1713bd5a499ccf48cc6781e32e625a7293462886918ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWViYmIwOThjYmY4NjA2YjQ2MWVkMmQzZDYyMzY0MmViNDhmMTYwZjA2M2M5ZTU2NTFjOGNhMmYwMWI1OTVkZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDg5M2Y0MGUzNzgxZWI4OTZjODJkMDQ2YTA4MDY3YTExZTM1Y2RmMmYxZGZhZjI2ZmVhOTBiOGRiNjY3NjQxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDQyMTRkOWIzODJiMGVkMzk2MDczODdhNTJiZDQ2NzMxZjU2YTI5ZjM4MTE3MzdjZWUzMzJiMjNmYWE0OTg0NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWQzNTcxMmNkZmYzNWI0MDUzOGJkYjk0OGNlMzBlNWY0YTU5ZDY5MzhiZDg0ODI5ODU3N2U3MmExNmNhYzQ0YiJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L18-L20",
+          "version": "repo-lines-v1:sha256:4509ca22038980831f90657ef5257884a6ab311d74ce9c57c03c1fc204a2cdba:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjc4MjU1MjlhYjYzYWYyMTQzZDBiMzI5ZGYwMjY1YTczMzY1ZTcyN2RlNTBlZTVjNjY3NGU1YTYxZjk0Mjk3YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzdiMjVkZmQzMmYxYWJiOTExOGUzMTc0MzVmNjFkOThlNjJkMTdhOWNmYjg1YTdjZmJhOWE1YWQyNGExMjRiZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTU3MzRiNTA2MzVkZGI0MzI1ZWYyZWE5NDhiZmY1YzUzMGExMTY0MjI4NTMzZDRmNmM4YTRhNmFmYTE3MjM2MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_234d830543ec4160bc393430bfb3ef5c",
+      "statement": "Model wiring is entirely environment-driven: AI_BASE_URL, AI_API_KEY, and AI_MODEL (defaulting to TokenHub/deepseek-v4-flash) map to the OpenAI base-url, api-key, and chat model option.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/resources/application.properties#L1-L3",
+          "version": "repo-lines-v1:sha256:77a547e72e88231da711bc51974e5a36d91ce9065ff8be28907d89e15164ed3c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmE0ZmVkOGM5YmVmZGJjZTdjMTY0ZWExODQ2ZGJjZDQ1OTMxNmM2YTI2YjlmMTE4NDg3MzJmMTcwOTk4N2MzNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzcwZDRlYzI0YjkwMGUyZTk1ZWI2ZmEyMDU3NzFmYjQyMTlhMWJjM2EwNjQ4YjJkNjM4MGE2ZmY4MDJjNTU1OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:62cbaf2862a337a746203f718e68f5e2944592fa54d4bc9900ae6d76707820d0",
+  "claims": [
+    {
+      "id": "claim_305dd779984842f4b3102cff228374f8",
+      "statement": "SentimentController builds its ChatClient once with defaultSystem(sentimentSystemPrompt.st) at construction, via injected ChatClient.Builder.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentController.java#L13-L21",
+          "version": "repo-lines-v1:sha256:66331036fa8747f352d7d04b691794f63a68a613b5d4c95f1126c0c3a7d394bc:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTUwZGIzMDU0MzFlMzg1MjZlMWU1ZTFjMjM2NGY5ODczODFkMjA5MWIzNjQ1OTllMTZiNGQ4MTVhMDMwNGE2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTAwY2I1N2I1Yjc5OTc2Y2Q5YjQxNjk4ZTMyYTFhMzU4OWFmZjE5Y2VkYTE4ZWYyZGI2NDBjYTNiMmZlZDYxMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDNkMmY3MzMxODgzMDY4YzljYjFmMThmNDQyN2I0ODlmODE1NzhhYTAxMzQ4OGUyZmY5NjhhNzg1ZDA2ZjEwOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5f75e98b712e45139e1ca6a18f258ce4",
+      "statement": "POST /sentiment sends the body text as the parameterized user message \"User text: {text}\" and returns .call().entity(SentimentAnalysis.class).",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentController.java#L23-L31",
+          "version": "repo-lines-v1:sha256:f825977832fc1ebeef42ed13ddfb83936dbedb4bfd63b6f6b4fc5e008344d843:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGU1NmZlYzc0NWM1OTAzZDlmNDkyZmFlNGFmMWI1N2RmMGZhMjI5YWNhZDg2Y2I4YjRhODdmMDFkNDZlZTM5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODA0YzczODc3ZTVkYWZkNjE5NjYzOGI2NTFkYjNkNjBjNGYwZGQ1YzZmZDI1YTU5ZmI4ZGQ2ODQ0MTgzZWVjNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_34e0225b77194db6a75217ee3c4d61a0",
+      "statement": "The sentiment system prompt defines the scoring contract: a score between -1 (very negative) and 1 (very positive) with a brief reasoning explanation.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/resources/sentimentSystemPrompt.st#L1-L1",
+          "version": "repo-lines-v1:sha256:6fe9dac28503c38fb76692eb7b5d3c54b445f0c23c6ee3709da8bf43a5658d99:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZlOWRhYzI4NTAzYzM4ZmI3NjY5MmViN2I1ZDNjNTRiNDQ1ZjBjMjNjNmVlMzcwOWRhOGJmNDNhNTY1OGQ5OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZlOWRhYzI4NTAzYzM4ZmI3NjY5MmViN2I1ZDNjNTRiNDQ1ZjBjMjNjNmVlMzcwOWRhOGJmNDNhNTY1OGQ5OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a5e668fd91dd4e0f8c596317c9236649",
+      "statement": "The module uses two records: TextInput (inbound text) and SentimentAnalysis (outbound explanation + double score).",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentAnalysis.java#L1-L1",
+          "version": "repo-lines-v1:sha256:8cce81f32a9012e4ddc5636e5cdc34c9add5312a20e3a4b9be4ee7fcdf59c0e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNjZTgxZjMyYTkwMTJlNGRkYzU2MzZlNWNkYzM0YzlhZGQ1MzEyYTIwZTNhNGI5YmU0ZWU3ZmNkZjU5YzBlMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNjZTgxZjMyYTkwMTJlNGRkYzU2MzZlNWNkYzM0YzlhZGQ1MzEyYTIwZTNhNGI5YmU0ZWU3ZmNkZjU5YzBlMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmQ1MDgyMGRiOWRiZmZjOWQ3MzUxY2QyMGY0MGYyZWNhNTM2MmQ1NzIyZjk3NDFhYTcwOGQzOTEzZTRmYmMxNyJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/TextInput.java#L1-L1",
+          "version": "repo-lines-v1:sha256:8cce81f32a9012e4ddc5636e5cdc34c9add5312a20e3a4b9be4ee7fcdf59c0e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNjZTgxZjMyYTkwMTJlNGRkYzU2MzZlNWNkYzM0YzlhZGQ1MzEyYTIwZTNhNGI5YmU0ZWU3ZmNkZjU5YzBlMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNjZTgxZjMyYTkwMTJlNGRkYzU2MzZlNWNkYzM0YzlhZGQ1MzEyYTIwZTNhNGI5YmU0ZWU3ZmNkZjU5YzBlMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzRhNjExNTVmNWM1NDU4YjRlY2QzM2RkZTNmZmYxNWU4YjhjZjNkNjZlYzcwMDYzODY2MzcxODA1NmYyNzJlZSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}

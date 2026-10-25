@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:835ee226bb2a31acc6e94eef2e09cd4b726afccfb0fe47aa90405326403ef8c7",
+  "claims": [
+    {
+      "id": "claim_debdb3212bf442148eb101e443e52f04",
+      "statement": "Every feature injects ChatClient.Builder and calls build() to obtain a ChatClient; only SentimentController customizes it with defaultSystem before building.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L20-L22",
+          "version": "repo-lines-v1:sha256:3af2a4ec7b6c3eb937b1713bd5a499ccf48cc6781e32e625a7293462886918ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWViYmIwOThjYmY4NjA2YjQ2MWVkMmQzZDYyMzY0MmViNDhmMTYwZjA2M2M5ZTU2NTFjOGNhMmYwMWI1OTVkZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDg5M2Y0MGUzNzgxZWI4OTZjODJkMDQ2YTA4MDY3YTExZTM1Y2RmMmYxZGZhZjI2ZmVhOTBiOGRiNjY3NjQxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDQyMTRkOWIzODJiMGVkMzk2MDczODdhNTJiZDQ2NzMxZjU2YTI5ZjM4MTE3MzdjZWUzMzJiMjNmYWE0OTg0NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWQzNTcxMmNkZmYzNWI0MDUzOGJkYjk0OGNlMzBlNWY0YTU5ZDY5MzhiZDg0ODI5ODU3N2U3MmExNmNhYzQ0YiJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentController.java#L15-L21",
+          "version": "repo-lines-v1:sha256:cc1c031153a42778c2f4d1b3b1de20a9e65851f70057e3bb5d8b2770d4d9a14d:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGY2YTdiMWYwMDgzMzQwOWNiZGY0MzAzMWExMmJjMWUyZmNiYzMwYTZmMzFhY2RiNTI2ZWFhYTcxOTczMmI0NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2UxZDBhNGYwMTM4NDI5MWQ5NDI1YTA2ZGRlNGE2ZWQzYzA2ODBlNTkyMDY4YWI5NjczZmExNDIwMDQwYTUzOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDNkMmY3MzMxODgzMDY4YzljYjFmMThmNDQyN2I0ODlmODE1NzhhYTAxMzQ4OGUyZmY5NjhhNzg1ZDA2ZjEwOCJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L18-L20",
+          "version": "repo-lines-v1:sha256:4509ca22038980831f90657ef5257884a6ab311d74ce9c57c03c1fc204a2cdba:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjc4MjU1MjlhYjYzYWYyMTQzZDBiMzI5ZGYwMjY1YTczMzY1ZTcyN2RlNTBlZTVjNjY3NGU1YTYxZjk0Mjk3YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdlNTc4OGQ1ZDlkNzNkMjRhODFkYmMwYTVhNzRiZmE4MmM5YzNiM2FmOTllNTJhZjc5NmU5MGI0NjhhOGEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzdiMjVkZmQzMmYxYWJiOTExOGUzMTc0MzVmNjFkOThlNjJkMTdhOWNmYjg1YTdjZmJhOWE1YWQyNGExMjRiZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTU3MzRiNTA2MzVkZGI0MzI1ZWYyZWE5NDhiZmY1YzUzMGExMTY0MjI4NTMzZDRmNmM4YTRhNmFmYTE3MjM2MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ec92cb284d1a47788a1d4a7ea1fa71a9",
+      "statement": "Prompt text is kept in ST4 .st template files under src/main/resources and loaded via @Value classpath resources into Resource fields.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L13-L14",
+          "version": "repo-lines-v1:sha256:6ad114b44b1a16577050fa27bd9a8994db18344ce9cf0928ba6217131f89c6d4:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTRmYzI2MDE5YTM5NWEzNGJjZWYwYmU1OTFjZmIwMDgzYzc2YWQyZDU4OGQ1ZjE5ZWIwODI2YTk1M2JjMzgwZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmUwMmNmYTAzNjM4YjBlYjNiNmU0MGU4NWZhOGZkYTczYTI0MjlhMDAzOWZhOWQyNzUzNzQ0YTc3MzFjOTlmNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzViMTQyMjM0ZTE4ZGE1NjYzYzE2ZmIyZjE5OTI5Yjg0NGRiMDUwOWEwNWQ0NGIxYzBiM2YyM2Y3OTJlNjVjYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzdiMjVkZmQzMmYxYWJiOTExOGUzMTc0MzVmNjFkOThlNjJkMTdhOWNmYjg1YTdjZmJhOWE1YWQyNGExMjRiZiJ9"
+        },
+        {
+          "resource": "repo://src/main/resources/promptTemplates/summarizeSystemPrompt.st#L1-L1",
+          "version": "repo-lines-v1:sha256:6ed3305d7412181df92ffd484a93e9aec1194699b193760dbb2056aec061b962:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmVkMzMwNWQ3NDEyMTgxZGY5MmZmZDQ4NGE5M2U5YWVjMTE5NDY5OWIxOTM3NjBkYmIyMDU2YWVjMDYxYjk2MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmVkMzMwNWQ3NDEyMTgxZGY5MmZmZDQ4NGE5M2U5YWVjMTE5NDY5OWIxOTM3NjBkYmIyMDU2YWVjMDYxYjk2MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/main/resources/promptTemplates/systemPromptTemplate.st#L1-L1",
+          "version": "repo-lines-v1:sha256:724518de9212b56a5ef55a3a85d1f1d77c7471945349fa33bd4758431eed04b8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzI0NTE4ZGU5MjEyYjU2YTVlZjU1YTNhODVkMWYxZDc3Yzc0NzE5NDUzNDlmYTMzYmQ0NzU4NDMxZWVkMDRiOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzI0NTE4ZGU5MjEyYjU2YTVlZjU1YTNhODVkMWYxZDc3Yzc0NzE5NDUzNDlmYTMzYmQ0NzU4NDMxZWVkMDRiOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/main/resources/sentimentSystemPrompt.st#L1-L1",
+          "version": "repo-lines-v1:sha256:6fe9dac28503c38fb76692eb7b5d3c54b445f0c23c6ee3709da8bf43a5658d99:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZlOWRhYzI4NTAzYzM4ZmI3NjY5MmViN2I1ZDNjNTRiNDQ1ZjBjMjNjNmVlMzcwOWRhOGJmNDNhNTY1OGQ5OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZlOWRhYzI4NTAzYzM4ZmI3NjY5MmViN2I1ZDNjNTRiNDQ1ZjBjMjNjNmVlMzcwOWRhOGJmNDNhNTY1OGQ5OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/main/resources/translationPromptTemplate.st#L1-L3",
+          "version": "repo-lines-v1:sha256:f58f9398762cdb1641ac0bd1acdaa35f04834fdcf5ea25c4db8828c8ca57501e:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzRhNjhiZjNlYTE3OWZhYzI3MzExZDRjZjVkOWUxM2JjMWUwOWU5NTVjMTM3OGM0YzM1ZGE1OTNiZGI1Yjc3MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjQyZjY0Y2I2NDYwNDY0M2RmM2ViOTAyMTA4ZjE2MGMwMzhjMjBhODIxNjNjZTk5YzE3YzNlZWZjMzkyNzJmNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_40b4d34df29c4d1b84789cc90251dc09",
+      "statement": "Templates are rendered with parameters passed through .user/.system specs (spec.text(resource).param(...)); inline user strings like \"User text: {text}\" are parameterized the same way.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L36-L42",
+          "version": "repo-lines-v1:sha256:a204b43664a0f049ffe45b7dab702b9bb8871fc3bd7a42895e41b854c9797422:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWM0ZDYwOWVkMGU1NzgzYzY4NjczNDA2OTE2MGViOGNmMzIyZTYwNWM0YThlMjc4OWYyZWQzZWQ3YjBjNTE3ZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmI3MTJlMDU1NWNiZGFlOWRjMWMxMmI1MDFhZTZjNmE5NzQ3ZDg0OGQ0MmFlMGVkZTQ4ZjA5ZmQwNDY3YWFkNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzY5NDZlMTAxZTVlNzhkOTBhNTEwYzY5ZjI2NmVmNzY1NDBkMzA5YjFiODIyNjk1YjUzMTcyZWQyY2FhMDI1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjljZmU2MjM3ZDkyNGFiNWEyNGJhMTc1NDg3NzdkY2E5NjY3MmIzZTY3MjU2NDc2ZGFkMDBmMjA1YzRkMGExNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3a00555520634de1b0242174af9ba2d5",
+      "statement": "All chat calls end with .call().entity(SomeRecord.class), requesting JSON matching the output record (Translation, SentimentAnalysis, Answer).",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L32-L32",
+          "version": "repo-lines-v1:sha256:80c8757321014dab4691c30348f25b9d5aa89696351f7d26b7be9fa403076722:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODBjODc1NzMyMTAxNGRhYjQ2OTFjMzAzNDhmMjViOWQ1YWE4OTY5NjM1MWY3ZDI2YjdiZTlmYTQwMzA3NjcyMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODBjODc1NzMyMTAxNGRhYjQ2OTFjMzAzNDhmMjViOWQ1YWE4OTY5NjM1MWY3ZDI2YjdiZTlmYTQwMzA3NjcyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzE2ZjE0ZWJkY2MwYzY1YzNhNjU1YjIzYWI3NjJmNjU0ZjIyOThlYzI4M2RkZDUzNmRlNzAyOGUyNmIyY2JlYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzY5NDZlMTAxZTVlNzhkOTBhNTEwYzY5ZjI2NmVmNzY1NDBkMzA5YjFiODIyNjk1YjUzMTcyZWQyY2FhMDI1OSJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L46-L46",
+          "version": "repo-lines-v1:sha256:80c8757321014dab4691c30348f25b9d5aa89696351f7d26b7be9fa403076722:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODBjODc1NzMyMTAxNGRhYjQ2OTFjMzAzNDhmMjViOWQ1YWE4OTY5NjM1MWY3ZDI2YjdiZTlmYTQwMzA3NjcyMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODBjODc1NzMyMTAxNGRhYjQ2OTFjMzAzNDhmMjViOWQ1YWE4OTY5NjM1MWY3ZDI2YjdiZTlmYTQwMzA3NjcyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjljZmU2MjM3ZDkyNGFiNWEyNGJhMTc1NDg3NzdkY2E5NjY3MmIzZTY3MjU2NDc2ZGFkMDBmMjA1YzRkMGExNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzc5NGQwMmE4MTIxOTQ0ZDE3NmQyNjVlOWJiOWNjNTlmNmFiODkwYmNhZGY4YWVmZGViZGJiYjRmMmVhODQ0NCJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/sentimentanalysis/SentimentController.java#L25-L30",
+          "version": "repo-lines-v1:sha256:1e04dc768eb96552281a78bb39047e8a8e43e38eacbe09c184a1bcf6bbb54655:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDBhMjQwNjAwM2FkZDUwYjk4MTg2ZWExY2Y1ODU2MGJjOGE2MTBkNzMxYmQxNWE4NWFlMDk1YmM5YTQwZGQ1NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzNkMjNjOTZhYjIxYTM3NTEwMjg3OTU4MjcwNWU2ZTU4YjQ0MzdkMjBhNzMwOWJkMjE0N2VhZTcwZWY3NWU0ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDNkMmY3MzMxODgzMDY4YzljYjFmMThmNDQyN2I0ODlmODE1NzhhYTAxMzQ4OGUyZmY5NjhhNzg1ZDA2ZjEwOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGY3MzlhMDZjMWNiYjEyNDRlMzM2M2QzOGJjZjlmYTUwY2U4NGZlZDM5OWMyMTkzYTNjN2YwOGQ1OTkxOGIyYSJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/simpletranslator/TranslatorController.java#L24-L31",
+          "version": "repo-lines-v1:sha256:a248615f069f8bccf98e1a47f626ff06b85d3ae3c0df24314bcad08a01211438:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDBhMjQwNjAwM2FkZDUwYjk4MTg2ZWExY2Y1ODU2MGJjOGE2MTBkNzMxYmQxNWE4NWFlMDk1YmM5YTQwZGQ1NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDg0MDdhZWY1M2M1NGNhZWZjYjYxNGUzNzA4OTY1OTljZGJiMzllZGQyYWJhNzI1YzYzNGIzNzY3OGZjYWUyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTU3MzRiNTA2MzVkZGI0MzI1ZWYyZWE5NDhiZmY1YzUzMGExMTY0MjI4NTMzZDRmNmM4YTRhNmFmYTE3MjM2MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGY3MzlhMDZjMWNiYjEyNDRlMzM2M2QzOGJjZjlmYTUwY2U4NGZlZDM5OWMyMTkzYTNjN2YwOGQ1OTkxOGIyYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b9e053f8117f4babb88f2e0c59ac650e",
+      "statement": "Conversation memory is enabled by an advisor param ChatMemory.CONVERSATION_ID keyed per conversation; SummaryController generates a fresh UUID when no X-Conversation-Id header is supplied.",
+      "evidence": [
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SpringAiBoardGameService.java#L43-L44",
+          "version": "repo-lines-v1:sha256:c01d88ac59870f870bff42df921faf92ff6ca5d4ed9bfe6d4cf10bb62eaad797:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2Q2NmYxNjNhODIxMzg5ZDZiMzgyYTRiYWJmMTM0M2JiNzRmNzcxZTI5MDAzNGRhMWVmOTg3ZTI4OWU5NzlkOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODc0YjViNzFiMzRhMTJiYTRkY2EzMzQwODE2Y2E5YTViMTkzMzcyOTc3NTdjZWIzNTE3NWIwNDkzYzYxNmFiOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjNjNjgxMDBlYjg2Yjg5ZDRhODU0YzYxNzU0NTViYmI0YzUwNTQ4MTNmOTU0ZDE2ZGQ0NWIxOTUzZDU0NDE3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWE4YjI1MGU0M2U5MzI2ZTFmZDMwMDFkOGExMzc1NjgwNjAyMmI3ODA5MmM3NzkyNDJmMGUyMTE5ZGE2MmRhOCJ9"
+        },
+        {
+          "resource": "repo://src/main/java/com/example/springaidemo/boardgamebuddy/SummaryController.java#L38-L40",
+          "version": "repo-lines-v1:sha256:55d3fd6c89fc316e288c44e2758699d69a1c882b719caab6834e38705bf7a5f5:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWJkM2EwZmVkY2M4NTQ4MDRjMDM3Yzk4MzdiODdhZmU5OTQzMDljMGE4ODJmOWQ1NDE2YmNhZDg4ZjUwZGZiMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMThlMGEzOTMzMDk0ZmEzYzE3OGFmMzgwMjE4Njg3M2I0MDkxZGM2NDU4MTY5NjJkMjZiZThmOTE2NzU1YzM3MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjlhYzEwNWMyMDJiNWEzZDQwMTU2NzViZThhZWQzNmJmMjE5M2JmZjE5ZjBmNDBiNjM0NjY2MzRjYmIwNzBlYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWFlYzk1ODY3MDA5ZDE1NTA0MzZlYTdmNjQzYmVmNzAwY2ZlOWRiMjlhMzExMjM5MGE4MjJjNDU1ZWQwNDAwYSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-10-26T13:41:05.092Z"
+  }
+}
